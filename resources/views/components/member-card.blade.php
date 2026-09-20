@@ -37,7 +37,7 @@
 
         @if (!empty($member['bio']))
             <p class="mt-3 text-sm leading-relaxed text-slate-600">{{ $member['bio'] }}</p>
-        @endif
+        @endif 
 
         {{-- mt-auto pushes the link to the bottom so links line up across a row --}}
         @if (!empty($member['slug']))

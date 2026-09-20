@@ -6,18 +6,27 @@
 
     $values = ['Equity', 'Respect', 'Integrity', 'Ethics', 'Honesty', 'Trust'];
 
+
+
     $officers = [
         [
-            'name'  => 'Suresh Lagan',
-            'role'  => 'Chairman',
-            'image' => 'img/01_Suresh_Lagan.png',
-            'slug'  => 'suresh-lagan',
-            'bio'   => 'Business Consultant specializing in Business Administration, Human Resources and Macro-Management.',
+            'name' => 'Mr. Suresh Sewaliah', 
+             'role' => 'President', 
+             'image' => 'img/12Suresh_Sewaliah.png', 
+             'slug' => 'suresh-sewaliah',
+             ], 
+
+            [
+            'name'  => 'Shane Durgah',
+            'role'  => 'Vice-President',
+            'image' => 'img/13Shane_Durgah.jpg',
+            'slug'  => 'shane-durgah',
+            'bio'   => 'Vice-President of the Board of Directors. Fisheries Officer – Ministry of Agriculture, Land and Fisheries.', 
         ],
         [
             'name'  => 'Anthony Ramsahai',
-            'role'  => 'Vice-Chairman',
-            'image' => 'img/02_Anthony_Ramsahai.png',
+            'role'  => 'Secretary',
+            'image' => 'img/02_Anthony_Ramsahai.png', 
             'slug'  => 'anthony-ramsahai',
             'bio'   => 'Professional Counselor – Ministry of National Security (Prison Services).',
         ],
@@ -78,9 +87,10 @@
     // PLACEHOLDERS: replace with the real committee members.
     // Add 'image' => 'img/10_First_Last.png' and 'slug' => '...' when you have them.
     $supervisory = [
-        ['name' => 'Member Name', 'role' => 'Supervisory Committee'],
-        ['name' => 'Member Name', 'role' => 'Supervisory Committee'],
-        ['name' => 'Member Name', 'role' => 'Supervisory Committee'],
+        ['name' => 'Samantha Sammy', 'role' => 'Chairperson', 'image' => 'img/14Samantha_Sammy.jpg', 'slug' => 'samantha-sammy'],
+        ['name' => 'Shivani Lutchman', 'role' => 'Secretary', 'image' => 'img/15Shivani_Lutchman.jpg', 'slug' => 'shivani-lutchman'],
+        ['name' => 'Shelly Ann Ramcharan', 'role' => 'Member', 'image' => 'img/111ShellyAnn_Ramcharan.jpg', 'slug' => 'shelly-ann-ramcharan'],
+        
     ];
 @endphp
 
@@ -127,10 +137,10 @@
         <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
             <h2 class="text-2xl font-semibold text-[#0B2E5F] sm:text-3xl">Board of Directors</h2>
 
-            <h3 class="mt-10 text-lg font-semibold text-slate-900">Executive officers</h3>
-            <div class="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                @foreach ($officers as $officer)
-                    <x-member-card :member="$officer" />
+            <h2 class="mt-10 text-lg font-semibold text-slate-900">Executive officers</h2>
+            <div class="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">  
+                @foreach ($officers as $officer) 
+                    <x-member-card :member="$officer" /> 
                 @endforeach
             </div>
 
@@ -144,15 +154,18 @@
     </section>
 
     {{-- ============ SUPERVISORY COMMITTEE ============ --}}
-    <section class="border-t border-slate-200 bg-slate-50">
-        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-            <h2 class="text-2xl font-semibold text-[#0B2E5F] sm:text-3xl">Supervisory Committee</h2>
+     {{-- ============ SUPERVISORY COMMITTEE ============ --}}
+<section class="border-t border-slate-200 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <h2 class="text-2xl font-semibold text-[#0B2E5F] sm:text-3xl">Supervisory Committee</h2>
 
-            <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                @foreach ($supervisory as $member)
-                    <x-member-card :member="$member" />
-                @endforeach
-            </div>
+        <div class="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            @foreach ($supervisory as $member)
+                <x-member-card :member="$member" />
+            @endforeach
         </div>
-    </section>
+    </div>
+</section>
+
+    
 </x-layout> 
