@@ -16,7 +16,8 @@
         ->implode('');
 @endphp
 
-<article class="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white transition-colors hover:border-[#0B2E5F]">
+<<article class= "flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white transition-colors hover:border-[#0B2E5F]"> 
+    {{--  Aspect ratio is set on the image itself, so that the image is always the same shape, even if it hasn't loaded yet.  --}} 
 
     {{-- A fixed aspect ratio keeps every photo the same shape at every screen size --}}
     @if (!empty($member['image']))
@@ -32,7 +33,7 @@
     @endif
 
     <div class="flex flex-1 flex-col p-5">
-        <h3 class="text-lg font-semibold text-[#0B2E5F]">{{ $member['name'] }}</h3>
+        <h4 class="text-lg font-semibold text-[#0B2E5F]">{{ $member['name'] }}</h4> 
         <p class="mt-1 text-sm font-medium text-lime-700">{{ $member['role'] }}</p>
 
         @if (!empty($member['bio']))
