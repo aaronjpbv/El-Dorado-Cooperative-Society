@@ -10,32 +10,32 @@
 
     $officers = [
         [
-            'name' => 'Mr. Suresh Sewaliah', 
+            'name' => 'Mr. Suresh Sewaliah',  
              'role' => 'President', 
              'image' => 'img/12Suresh_Sewaliah.png', 
              'slug' => 'suresh-sewaliah',
              ], 
 
             [
-            'name'  => 'Shane Durgah',
+            'name'  => 'MR. Shane Durgah', 
             'role'  => 'Vice-President',
             'image' => 'img/13Shane_Durgah.jpg',
             'slug'  => 'shane-durgah',
             'bio'   => 'Vice-President of the Board of Directors. Fisheries Officer – Ministry of Agriculture, Land and Fisheries.', 
         ],
         [
-            'name'  => 'Anthony Ramsahai',
+            'name'  => 'Mr. Anthony Ramsahai', 
             'role'  => 'Secretary',
             'image' => 'img/02_Anthony_Ramsahai.png', 
             'slug'  => 'anthony-ramsahai',
             'bio'   => 'Professional Counselor – Ministry of National Security (Prison Services).',
         ],
         [
-            'name'  => 'Swamy Morgan',
-            'role'  => 'Secretary',
-            'image' => 'img/03_Swamy_Morgan.png',
-            'slug'  => 'swamy-morgan',
-            'bio'   => 'Entrepreneur – Prestige Tours and Rentals. Over 40 years of business experience.',
+            'name'  => 'Mr Roshad Ramsewak',
+            'role'  => 'Treasurer',
+            'image' => 'img/06_Roshad_Ramsawak.png', 
+            'slug'  => 'roshad-ramsawak',
+            'bio'   => 'Entrepreneur', 
         ],
         [
             'name'  => 'Ramesh Ramcharan',
@@ -48,25 +48,25 @@
 
     $directors = [
         [
-            'name'  => 'Shane Durgah',
+            'name'  => 'Mr Kewal Mahabal',
             'role'  => 'Director',
-            'image' => 'img/05_Shane_Durgah.png',
-            'slug'  => 'shane-durgah',
-            'bio'   => 'Fisheries Officer – Ministry of Agriculture, Land and Fisheries.',
+            'image' => 'img/19_Kewal_Mahabal.jpg', 
+            'slug'  => 'kewal-mahabal',
+            'bio'   => 'Entrepreneur', 
         ],
         [
-            'name'  => 'Roshad Ramsawak',
+            'name'  => 'Mr. Gandeo Gildarie', 
             'role'  => 'Director',
-            'image' => 'img/06_Roshad_Ramsawak.png',
-            'slug'  => 'roshad-ramsawak',
+            'image' => 'img/20_Gandeo_Gildarie.jpg',  
+            'slug'  => 'gandeo-gildarie',
             'bio'   => 'Investment Banker at Republic Bank Limited.',
         ],
         [
-            'name'  => 'Siewdath Dupraj',
+            'name'  => 'Mr. Ivan Seenath',
             'role'  => 'Director',
-            'image' => 'img/10_Siewdath_Dupraj.png', 
-            'slug'  => 'siewdath-dupraj',
-            'bio'   => 'Farmer and former Agricultural Officer.',
+            'image' => 'img/09Ivan_Seenath.jpg', 
+            'slug'  => 'ivan-seenath',
+            'bio'   => 'Entrepreneur', 
         ],
         [
             'name'  => 'Kawal Mahabal',
